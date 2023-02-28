@@ -25,7 +25,7 @@ resource "aws_cloudfront_distribution" "_" {
   #}
 
   # If you have domain configured use it here 
-  aliases = ["${var.purchased_domain}"]
+  # aliases = ["${var.purchased_domain}"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
@@ -54,8 +54,7 @@ resource "aws_cloudfront_distribution" "_" {
   }
 
   viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate._.arn
-    ssl_support_method = "sni-only"
+    cloudfront_default_certificate = true
   }
 
   depends_on = [aws_s3_bucket._, aws_s3_bucket_website_configuration._]
