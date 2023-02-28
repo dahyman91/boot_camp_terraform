@@ -5,7 +5,7 @@
   `export AWS_ACCESS_KEY_ID=<accessKeyId>`
   `export AWS_SECRET_ACCESS_KEY=<sectretAccesKey>`
 - Run a build of your static site
-- Add that build folder (sometimes this has different naming conventions) to the root level of this repository.
+- Add that build folder (sometimes this has different naming conventions) to the root level of this repository with the name build.
 
 ## Deployment
 
