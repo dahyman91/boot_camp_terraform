@@ -12,8 +12,8 @@
 - Move into the terraform folder with `cd terraform`
 - Run `terraform init`
 - Run `terraform apply`
-- When prompted, add the domain, that you purchased, including the extension as a variable.
+- When prompted, add the domain that you purchased, including the extension as a variable `eg mydomain.com or greatname.link`.
 
-## Destroying all Resources
+## Destroying Resources
 
 - One of the benefits of terraform is that as easily as you create resources, you can also destroy them. To revert everything you've done, just run `terraform destroy` and once again enter the name of the domain you purchased.
